@@ -5,7 +5,7 @@
 
 	<p>Veuillez rentrer vos informations pour suivre nos cours</p>
 
-	<form method="post" action="<?php echo Router::url('subcriptions/index'); ?>" class="form-horizontal">
+	<form method="post" action="<?php echo Router::url('users/index'); ?>" class="form-horizontal">
 		<?php echo $this->Form->input('name', 'Nom*'); ?>
 		<?php echo $this->Form->input('first_name', 'Prénom*'); ?>
 		<?php echo $this->Form->input('b_date', 'Date de naissance*'); ?>

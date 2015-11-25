@@ -19,7 +19,6 @@
  			$this->request->data->password = '';
  		}
  		if($this->Session->isLogged()) {
- 			print('jesuisco');
  			if($this->Session->user('status') == '1') {
  				$this->redirect('index');
  			} else {
@@ -38,5 +37,24 @@
  		$this->Session->setFlash('You have been successfully logged out.');
  		$this->redirect('');
  	}
+
+ 	/**
+ 	* 
+ 	**/
  	
+ 	function index(){
+
+		$this->loadModel('User');
+		if($this->request->data){
+			if($this->user->validates($this->request->data)){
+				$this->request->data->created = date('Y-m-d h:i:s');
+				$this->user->save($this->request->data);
+				$this->Session->setFlash('Le contenu a bien été modifié.');
+				$this->redirect('index');
+			} else {
+				$this->Session->setFlash('Merci de corriger vos informations.', 'danger');
+			}
+		}
+	}
+
  } ?>
