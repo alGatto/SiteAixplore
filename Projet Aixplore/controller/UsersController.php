@@ -19,6 +19,7 @@
  			$this->request->data->password = '';
  		}
  		if($this->Session->isLogged()) {
+ 			print('jesuisco');
  			if($this->Session->user('status') == '1') {
  				$this->redirect('index');
  			} else {
