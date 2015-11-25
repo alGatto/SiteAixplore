@@ -1,0 +1,150 @@
+body {
+	background-image:url(../img/images_pt/fond.jpg);
+}
+.bwrite{
+	background-color:rgba(255,255,255,0.7);
+	border-radius: 8px 8px 8px 8px;
+	padding: 20px;
+}
+
+.brr{
+	text-align:center;
+}
+.bee{
+	display:block;
+	position:center;
+}
+.blogo{
+	display:inline-block;
+	float:right;
+	height: 100%;
+}
+.blogo img{
+	height: 100%;
+}
+.bhh{
+	display:inline-block;
+	float:left;
+}
+.banner-logo{
+	height: 80px;
+	width: 100%;
+}
+
+
+/* ////////////////////////////////////////////----------------BANNER---------------////////////////////////////////////////////////////*/
+
+.banner{
+	width: 95%;
+	height: 441px;
+	margin:0;
+}
+.imagefond{
+	width: 95%;
+	height: 441px;
+	position: absolute;
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.style-banner{
+	width: 100%;
+	height: 25%;
+	bottom: -85%;
+	position: relative;
+}
+.style img{
+	width: 100%;
+	height: 100%;
+}
+.subtitle{
+	width: 100%;
+	text-align: center;
+	padding-top: 4%;
+}
+.subtitle h1{
+	font-size: 2.9em;
+  font-style: bold;
+}
+
+.title-site{
+	position: absolute;
+	z-index: 3;
+}
+.imagefond span{
+  position: absolute;
+  top: 10px;
+  
+}
+.imagefond span.title-site{
+  margin-top: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 4.5em;
+  width: 100%;
+}
+.span .descr{
+  margin-top: 300px;
+  margin-left: auto;
+  color: #BABABA;
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+  text-decoration: italic;
+  text-shadow:5px 5px 10px black;
+  font-style:italic
+}
+.imagefond span.back{
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+@media (min-width:1200px) {
+    .imagefond{
+        width: 1140px;
+    }
+}
+@media (max-width:1200px) {
+    .imagefond{
+        width: 940px;
+    }
+}
+@media (max-width:1000px) {
+    .imagefond{
+        width: 723px;
+    }
+}
+@media (max-width:740px) {
+    .imagefond{
+        width: 95%;
+    }
+}
+@media (max-width:420px) {
+    .toto{
+	display:none;
+	}
+	.bhh{
+	display:none;
+	}
+}
+/*//////////////////CARROUSEL/////////////////////////*/
+.carrousel{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.slide{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
