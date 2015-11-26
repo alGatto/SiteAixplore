@@ -34,7 +34,7 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      	<ul class="nav navbar-nav">
 			    	<li><a href="<?php echo Router::url('layout/index'); ?>">Home</a></li>
-			    	<li><a href="<?php echo Router::url('subcriptions/index'); ?>">Inscription</a></li>
+			    	<li><a href="<?php echo Router::url('users/index'); ?>">Inscription</a></li>
 			    	<li><a href="<?php echo Router::url('contacts/index'); ?>">Contact</a></li>
 		      	</ul>
 		      	<ul class="nav navbar-nav navbar-right">

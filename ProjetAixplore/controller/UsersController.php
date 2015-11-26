@@ -39,16 +39,18 @@
  	}
 
  	/**
- 	* 
+ 	* 	fonction inscription
  	**/
  	
  	function index(){
-
-		$this->loadModel('User');
+ 		/**
+		*  Fonction inscription
+ 		 **/
+		$this->loadModel('User');  																		// On charge le model
 		if($this->request->data){
-			if($this->user->validates($this->request->data)){
-				$this->request->data->created = date('Y-m-d h:i:s');
-				$this->user->save($this->request->data);
+			if($this->User->validates($this->request->data)){ 											// On  vérifie que nos règles sont bien respecter
+				$this->request->data->create_date = date('Y-m-d h:i:s');
+				$this->User->save($this->request->data);												// sauvegarde des informations et transformation en request avec la fonction save qui l'envoie a la bdd.
 				$this->Session->setFlash('Le contenu a bien été modifié.');
 				$this->redirect('index');
 			} else {
