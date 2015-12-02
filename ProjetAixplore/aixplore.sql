@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 25 Novembre 2015 à 11:07
+-- Généré le :  Mer 02 Décembre 2015 à 13:37
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -40,14 +40,22 @@ CREATE TABLE IF NOT EXISTS `answers` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `class`
+-- Structure de la table `classes`
 --
 
-CREATE TABLE IF NOT EXISTS `class` (
+CREATE TABLE IF NOT EXISTS `classes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) DEFAULT NULL,
+  `online` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `classes`
+--
+
+INSERT INTO `classes` (`id`, `name`, `online`) VALUES
+(1, 'atchoum', 1);
 
 -- --------------------------------------------------------
 
@@ -127,14 +135,18 @@ CREATE TABLE IF NOT EXISTS `users` (
   `photo` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Contenu de la table `users`
 --
 
 INSERT INTO `users` (`id`, `email`, `create_date`, `b_date`, `name`, `first_name`, `city`, `school`, `pseudo`, `status`, `photo`, `password`) VALUES
-(1, 'test@test.fr', '2015-11-25', '2012-07-18', 'Testeur', 'jean-paul', 'aix en provence', 'ynov', 'Letesteur', 1, NULL, 'd033e22ae348aeb5660fc2140aec35850c4da997');
+(1, 'test@test.fr', '2015-11-25', '2012-07-18', 'Testeur', 'jean-paul', 'aix en provence', 'ynov', 'Letesteur', 1, NULL, 'd033e22ae348aeb5660fc2140aec35850c4da997'),
+(2, 'test@test.fr', '2015-11-26', '0000-00-00', 'test', 'test', 'test', 'test', 'test', NULL, NULL, 'test'),
+(3, 'test@test.fr', '2015-11-26', '0000-00-00', 'test', 'test', 'test', 'test', 'test', NULL, NULL, 'test'),
+(4, 'test@test.fr', '2015-11-26', '0000-00-00', 'test', 'test', 'test', 'test', 'test', NULL, NULL, 'test'),
+(5, 'dylan.cocheteux@ynov.com', '2015-12-02', '0000-00-00', 'cocheteux', 'dylan', 'Aix en Provence', 'Ynov', 'Monpseudo', NULL, NULL, 'Didou13840');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

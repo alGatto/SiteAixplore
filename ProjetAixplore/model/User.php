@@ -10,7 +10,10 @@
 			'message' => 'Please complete the input "FirstName".'),
 		'email' => array(
 			'rule' => 'notEmpty',
-			'message' => 'Please complete the input "E-mail".')
+			'message' => 'Please complete the input "E-mail".'),
+		'date' => array(
+			'rule' => 'notEmpty',
+			'message' => 'Please complete the imput "Date".')
 	);
  	
  	

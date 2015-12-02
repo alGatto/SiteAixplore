@@ -36,6 +36,7 @@
 			    	<li><a href="<?php echo Router::url('layout/index'); ?>">Home</a></li>
 			    	<li><a href="<?php echo Router::url('users/index'); ?>">Inscription</a></li>
 			    	<li><a href="<?php echo Router::url('contacts/index'); ?>">Contact</a></li>
+			    	<li><a href="<?php echo Router::url('classs/index'); ?>">Class</a></li>
 		      	</ul>
 		      	<ul class="nav navbar-nav navbar-right">
 		      	<?php if(!$this->Session->isLogged()){ ?>

@@ -8,10 +8,10 @@
 	<form method="post" action="<?php echo Router::url('users/index'); ?>" class="form-horizontal">
 		<?php echo $this->Form->input('name', 'Nom*'); ?>
 		<?php echo $this->Form->input('first_name', 'Prénom*'); ?>
-		<?php echo $this->Form->input('b_date', 'Date de naissance*'); ?>
+		<?php echo $this->Form->input('b_date', 'Date de naissance*', array('type'=>'date')); ?>
 		<?php echo $this->Form->input('email', 'E-mail*', array('type'=>'email')); ?>
 		<?php echo $this->Form->input('pseudo', 'Pseudo'); ?>
-		<?php echo $this->Form->input('password', 'Mot de Passe*'); ?>
+		<?php echo $this->Form->input('password', 'Mot de Passe*', array('type'=>'password')); ?>
 		<?php echo $this->Form->input('city', 'Ville*'); ?>
 		<?php echo $this->Form->input('school', 'Ecole, collège ou lycée*'); ?>
 		<?php echo $this->Form->input('id', 'hidden'); ?>
