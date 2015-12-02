@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 02 Décembre 2015 à 13:37
+-- Généré le :  Mer 02 Décembre 2015 à 13:57
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `answers` (
 CREATE TABLE IF NOT EXISTS `classes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) DEFAULT NULL,
-  `online` int(11) NOT NULL,
+  `type` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
@@ -54,8 +54,8 @@ CREATE TABLE IF NOT EXISTS `classes` (
 -- Contenu de la table `classes`
 --
 
-INSERT INTO `classes` (`id`, `name`, `online`) VALUES
-(1, 'atchoum', 1);
+INSERT INTO `classes` (`id`, `name`, `type`) VALUES
+(1, 'atchoum', 'Classe');
 
 -- --------------------------------------------------------
 

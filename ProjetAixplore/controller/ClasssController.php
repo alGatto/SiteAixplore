@@ -6,7 +6,7 @@ class ClasssController extends Controller{
 
 		$perPage = 5; 
 		$this->loadModel('Classe');
-		$conditions = array('online' => 1);
+		$conditions = array('type' => 'Classe');
 		$d['classs'] = $this->Classe->find(array(
 				'conditions' => $conditions,
 				'limit' => ($perPage*($this->request->page-1)).', '.$perPage
